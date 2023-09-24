@@ -7,7 +7,6 @@ const calculatePerformance = (s, name) => {
   // Start measuring time
   const startTime = performance.now();
   // Parse the HTML string
-  s.replace(/&quot;/g, '"')
   const root = parse(s);
   root.toString()
   // End measuring time
